@@ -3,10 +3,10 @@ LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a
 
 DEPENDS += "bison-native"
 
-UBOOT_SRC ?= "git://github.com/varigit/uboot-imx;protocol=https"
+UBOOT_SRC ?= "git://github.com/FrancescoFerraro/uboot-imx;protocol=https"
 
-SRCBRANCH = "lf_v2023.04_var02"
-SRCREV = "b87559e2d08d72628147447709c99d9fb9efc390"
+SRCBRANCH = "dev_lf_v2023.04_var01_RND-2051_mx95"
+SRCREV = "da36aae78337646f3f8a87fb2a1a8ea2822d9eb3"
 
 UBOOT_INITIAL_ENV_DEVICE = "sd"
 
