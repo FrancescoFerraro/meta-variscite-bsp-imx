@@ -20,7 +20,7 @@ DEFAULT_PREFERENCE = "1"
 KERNEL_SRC ?= "git://github.com/FrancescoFerraro/linux-imx;protocol=https"
 
 SRCBRANCH = "dev_lf-6.6.y_var01_RND-2051_mx95"
-SRCREV = "42d382042d536363d2a2ac866153324bb69d6980"
+SRCREV = "1dbf7a2721c7bb122324fbe46ded7a30be1e3b1a"
 LINUX_VERSION = "6.6.3"
 
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
@@ -40,7 +40,7 @@ LOCALVERSION:imx95-var-dart = "-imx95"
 
 KBUILD_DEFCONFIG:mx6-nxp-bsp = "imx_v7_var_defconfig"
 KBUILD_DEFCONFIG:mx8-nxp-bsp = "imx8_var_defconfig"
-KBUILD_DEFCONFIG:mx9-nxp-bsp = "imx_v8_defconfig"
+KBUILD_DEFCONFIG:mx9-nxp-bsp = "imx8_var_defconfig"
 KBUILD_DEFCONFIG:imx8mq-var-dart = "imx8mq_var_dart_defconfig"
 DEFAULT_DTB:imx8mq-var-dart = "sd-lvds"
 DEFAULT_DTB:imx8qxp-var-som = "sd"
