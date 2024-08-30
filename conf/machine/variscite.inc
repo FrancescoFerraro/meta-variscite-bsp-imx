@@ -27,16 +27,9 @@ NETMAN_PACKAGES = "\
 	networkmanager-nmcli \
 "
 
-# Wayland distros should default to networkmanager
-PREFERRED_CONNECTIVITY_MANAGER	 ?= " \
-	${@bb.utils.contains('DISTRO', 'b2qt', '', \
-		bb.utils.contains('DISTRO_FEATURES', 'wayland', \
-		'networkmanager', '', d), d)} \
-"
-PREFERRED_CONNECTIVITY_MANAGER_PACKAGES	?= " \
-	${@bb.utils.contains('PREFERRED_CONNECTIVITY_MANAGER', 'networkmanager', \
-		'${NETMAN_PACKAGES}','', d)} \
-"
+PREFERRED_CONNECTIVITY_MANAGER	 ?= ""
+
+PREFERRED_CONNECTIVITY_MANAGER_PACKAGES	?= ""
 
 # Variscite BSP default providers
 PREFERRED_RPROVIDER_u-boot-default-env ?= "u-boot-variscite"
