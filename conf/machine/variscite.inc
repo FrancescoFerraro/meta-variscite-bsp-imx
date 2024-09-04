@@ -29,7 +29,10 @@ NETMAN_PACKAGES = "\
 
 PREFERRED_CONNECTIVITY_MANAGER	 ?= ""
 
-PREFERRED_CONNECTIVITY_MANAGER_PACKAGES	?= ""
+PREFERRED_CONNECTIVITY_MANAGER_PACKAGES	?= " \
+	${@bb.utils.contains('PREFERRED_CONNECTIVITY_MANAGER', 'networkmanager', \
+		'${NETMAN_PACKAGES}','', d)} \
+"
 
 # Variscite BSP default providers
 PREFERRED_RPROVIDER_u-boot-default-env ?= "u-boot-variscite"
