@@ -1,6 +1,6 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-SRC_URI:var-som = "git://github.com/FrancescoFerraro/imx-atf;protocol=https;branch=${SRCBRANCH}"
+SRC_URI:var-som = "git://github.com/varigit-dev/imx-atf;protocol=https;branch=${SRCBRANCH}"
 SRCBRANCH:var-som = "dev_lf_v2.10_var01_RND-2095_mx95"
 SRCREV:var-som = "7ddc8c95bd6149d38415d5b2483601f792f62de9"
 
