@@ -20,7 +20,7 @@ MULTIUBI_BUILD ?= "128kbpeb 256kbpeb"
 
 UBI_VOLNAME  = "rootfs"
 
-IMAGE_FSTYPES = "tar.gz multiubi wic.gz"
+IMAGE_FSTYPES += "multiubi"
 
 # do multiubi last
 IMAGE_TYPEDEP:multiubi += "${IMAGE_FSTYPES}"
