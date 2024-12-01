@@ -17,10 +17,10 @@ DEPENDS += "lzop-native bc-native"
 
 DEFAULT_PREFERENCE = "1"
 
-KERNEL_SRC ?= "git://github.com/varigit/linux-imx;protocol=https"
+KERNEL_SRC ?= "git://git@github.com:22/varigit-dev/linux-imx;protocol=ssh"
 
-SRCBRANCH = "lf-6.6.y_6.6.23-2.0.0_var01"
-SRCREV = "98ccdc8d76acc094544a70a94494968c3d0ab678"
+SRCBRANCH = "dev_lf-6.6.y_6.6.23-2.0.0_var01_mx6ul-scarthgap"
+SRCREV = "8fc8a54bad50246f6a4800629db5ffbf32bcc00c"
 LINUX_VERSION = "6.6.23"
 
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
@@ -79,4 +79,4 @@ pkg_postinst:kernel-devicetree:append:imx8qm-var-som () {
 }
 
 KERNEL_VERSION_SANITY_SKIP="1"
-COMPATIBLE_MACHINE = "(mx8-nxp-bsp|mx9-nxp-bsp)"
+COMPATIBLE_MACHINE = "(mx6-nxp-bsp|mx8-nxp-bsp|mx9-nxp-bsp)"
